@@ -11,8 +11,8 @@
       My introduction
     </p>
 
-    <div class="flex">
-      <div class="w-2/3">
+    <div class="lg:flex">
+      <div class=" w-full lg:w-2/3">
         <div class="about-me py-14 px-16 text-xl w-3/3">
           <p class="text-white x-animation-hidden">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
@@ -29,7 +29,7 @@
           </button>
         </div>
       </div>
-      <div class="w-1/3 mr-10">      <img src="public/images/Code typing-bro.png" alt=""></div>
+      <div class="lg:w-1/3 m-10">      <img src="public/images/Code typing-bro.png" alt=""></div>
     </div>
   </div>
 </template>
