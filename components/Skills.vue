@@ -44,7 +44,7 @@
           :key="item.name"
         >
           <div class="img flex items-center h-5/6 justify-center py-5">
-            <img class="w-2/3 p-2" :src="item.path" alt="" />
+            <img class="w-2/3 p-2" :src=item.path alt="" />
           </div>
           <p class="flex justify-center text-xl font-semibold">
             {{ item.name }}
@@ -65,7 +65,7 @@
           :key="item.name"
         >
           <div class="img flex items-center h-5/6 justify-center py-5">
-            <img class="w-2/3 p-2" src="assets/img/d-img1.png" alt="" />
+            <img class="w-2/3 p-2" :src="db.path" alt="" />
           </div>
           <p class="flex justify-center text-xl font-semibold">
             {{ item.name }}
@@ -79,22 +79,22 @@
 <script setup>
 import { ref, onMounted } from "vue";
 const lang = [
-  { name: "C#", path: "assets/img/img1.png" },
-  { name: "python", path: "assets/img/img2.png" },
-  { name: "dart", path: "assets/img/img3.png" },
-  { name: "javaScript", path: "assets/img/img4.png" },
-  { name: "PHP", path: "assets/img/img5.png" },
+  { name: "C#", path: "@/_nuxt/assets/img/img1.png" },
+  { name: "python", path: "/_nuxt/assets/img/img2.png" },
+  { name: "dart", path: "/_nuxt/assets/img/img3.png" },
+  { name: "javaScript", path: "/_nuxt/assets/img/img4.png" },
+  { name: "PHP", path: "/_nuxt/assets/img/img5.png" },
 ];
 const frameworks = [
-  { name: "flutter", path: "assets/img/f-img1.png" },
-  { name: "Vue.js", path: "assets/img/f-img2.png" },
-  { name: "Laravel", path: "assets/img/f-img3.png" },
-  { name: "ASP.NET", path: "assets/img/f-img4.png" },
+  { name: "flutter", path: "/_nuxt/assets/img/f-img1.png" },
+  { name: "Vue.js", path: "/_nuxt/assets/img/f-img2.png" },
+  { name: "Laravel", path: "/_nuxt/assets/img/f-img3.png" },
+  { name: "ASP.NET", path: "assets/img/d-img2.png" },
 ];
 const db = [
-  { name: "SQL", path: "assets/img/d-img1.png" },
-  { name: "my-SQL", path: "assets/img/d-img2.png" },
-  { name: "SQLite", path: "assets/img/d-img3.png" },
+  { name: "SQL", path: "/_nuxt/assets/img/d-img1.png" },
+  { name: "my-SQL", path: "/_nuxt/assets/img/d-img2.png" },
+  { name: "SQLite", path: "/_nuxt/assets/img/d-img3.png" },
 ];
 
 onMounted(() => {
