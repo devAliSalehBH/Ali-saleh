@@ -31,32 +31,32 @@
 
 <script setup>
 import { onMounted } from "vue";
-onMounted(() => {
-  const Yobserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        entry.target.classList.add("y-animation-show");
-      } else {
-        entry.target.classList.remove("y-animation-show");
-      }
-    });
-  });
-  const Xobserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        entry.target.classList.add("x-animation-show");
-      } else {
-        entry.target.classList.remove("x-animation-show");
-      }
-    });
-  });
-  const YhiddenElements = document.querySelectorAll(".y-animation-hidden");
-  YhiddenElements.forEach((el) => Yobserver.observe(el));
-  const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
-  XhiddenElements.forEach((el) => Xobserver.observe(el));
-});
+// onMounted(() => {
+//   const Yobserver = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       console.log(entry);
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("y-animation-show");
+//       } else {
+//         entry.target.classList.remove("y-animation-show");
+//       }
+//     });
+//   });
+//   const Xobserver = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       console.log(entry);
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("x-animation-show");
+//       } else {
+//         entry.target.classList.remove("x-animation-show");
+//       }
+//     });
+//   });
+//   const YhiddenElements = document.querySelectorAll(".y-animation-hidden");
+//   YhiddenElements.forEach((el) => Yobserver.observe(el));
+//   const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
+//   XhiddenElements.forEach((el) => Xobserver.observe(el));
+// });
 </script>
 
 <style scoped>
