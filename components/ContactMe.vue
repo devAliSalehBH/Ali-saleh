@@ -16,7 +16,7 @@
       class="medias m-20 p-10 bg-slate-800 rounded-xl grid grid-cols-1 lg:grid-cols-2"
     >
       <div
-        class="media flex gap-3 p-4 items-center text-xl lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        class="media flex gap-3 p-4 items-center text-[3vw] w-full text-gray-400 x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -26,7 +26,7 @@
         <p>+967779819388</p>
       </div>
       <div
-        class="media flex gap-3 p-4 items-center text-xl lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        class="media flex gap-3 p-4 items-center text-[3vw] w-full text-gray-400 x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -36,7 +36,7 @@
         <p>off.alisaleh@gmail.com</p>
       </div>
       <div
-        class="media flex gap-3 p-4 items-center text-xl lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        class="media flex gap-3 p-4 items-center text-[3vw] w-full text-gray-400 x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -46,7 +46,7 @@
         <p>devAliSalehBH</p>
       </div>
       <div
-        class="media flex gap-3 p-4 items-center text-xl lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        class="media flex gap-3 p-4 items-center text-[3vw] w-full text-gray-400 x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
