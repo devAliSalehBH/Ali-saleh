@@ -60,7 +60,7 @@ import { onMounted } from "vue";
 </script>
 
 <style scoped>
-.y-animation-hidden {
+/* .y-animation-hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(80%);
@@ -86,5 +86,5 @@ import { onMounted } from "vue";
 
   filter: blur(0);
   transform: translateX(0) rotate(0deg);
-}
+} */
 </style>
