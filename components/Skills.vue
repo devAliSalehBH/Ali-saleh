@@ -1,5 +1,5 @@
 <template>
-  <div id="skills"class="my-skill bg-slate-800 py-10 px-16">
+  <div id="skills" class="my-skill bg-slate-800 py-10 px-16">
     <h2
       class="text-white justify-center flex text-4xl pt-10 font-semibold y-animation-hidden"
     >
@@ -65,7 +65,7 @@
           :key="item.name"
         >
           <div class="img flex items-center h-5/6 justify-center py-5">
-            <img class="w-2/3 p-2" :src="item.path" alt="" />
+            <img class="w-2/3 p-2" src="assets/img/d-img1.png" alt="" />
           </div>
           <p class="flex justify-center text-xl font-semibold">
             {{ item.name }}
