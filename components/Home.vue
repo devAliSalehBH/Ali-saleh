@@ -1,5 +1,8 @@
 <template>
-  <div id="home"class="home text-white pb-10 pt-36 gap-3 px-10 lg:flex h-screen">
+  <div
+    id="home"
+    class="home text-white pb-10 pt-36 gap-3 px-10 lg:flex h-screen"
+  >
     <div class="pic lg:w-1/2">
       <div class="box"></div>
     </div>
@@ -31,36 +34,36 @@
 
 <script setup>
 import { onMounted } from "vue";
-// onMounted(() => {
-//   const Yobserver = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       console.log(entry);
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("y-animation-show");
-//       } else {
-//         entry.target.classList.remove("y-animation-show");
-//       }
-//     });
-//   });
-//   const Xobserver = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       console.log(entry);
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("x-animation-show");
-//       } else {
-//         entry.target.classList.remove("x-animation-show");
-//       }
-//     });
-//   });
-//   const YhiddenElements = document.querySelectorAll(".y-animation-hidden");
-//   YhiddenElements.forEach((el) => Yobserver.observe(el));
-//   const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
-//   XhiddenElements.forEach((el) => Xobserver.observe(el));
-// });
+onMounted(() => {
+  const Yobserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("y-animation-show");
+      } else {
+        entry.target.classList.remove("y-animation-show");
+      }
+    });
+  });
+  const Xobserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("x-animation-show");
+      } else {
+        entry.target.classList.remove("x-animation-show");
+      }
+    });
+  });
+  const YhiddenElements = document.querySelectorAll(".y-animation-hidden");
+  YhiddenElements.forEach((el) => Yobserver.observe(el));
+  const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
+  XhiddenElements.forEach((el) => Xobserver.observe(el));
+});
 </script>
 
 <style scoped>
-/* .y-animation-hidden {
+.y-animation-hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(80%);
@@ -86,5 +89,5 @@ import { onMounted } from "vue";
 
   filter: blur(0);
   transform: translateX(0) rotate(0deg);
-} */
+}
 </style>

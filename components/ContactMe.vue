@@ -13,7 +13,7 @@
     </p>
 
     <div
-      class="medias m-20 p-10 bg-slate-800 rounded-xl grid grid-cols-1 lg:grid-cols-2"
+      class="medias m-10 lg:m-20 p-10 bg-slate-800 rounded-xl grid grid-cols-1 lg:grid-cols-2"
     >
       <div
         class="media flex gap-3 p-4 items-center text-[3vw] w-full text-gray-400 x-animation-hidden"
