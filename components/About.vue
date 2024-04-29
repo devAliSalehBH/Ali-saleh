@@ -11,20 +11,25 @@
       My introduction
     </p>
 
-    <div class="about-me py-14 px-16 text-xl w-3/3 lg:w-2/3">
-      <p class="text-white x-animation-hidden">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
-        molestiae voluptate ab quaerat eaque odit consectetur dolorum eligendi
-        provident culpa optio dolore itaque, placeat soluta nobis sequi fugiat
-        in earum!
-      </p>
-    </div>
-    <div class="cv-download py-5 px-16">
-      <button
-        class="bg-cyan-500 rounded-full text-white px-11 py-5 font-semibold text-md y-animation-hidden"
-      >
-        Download CV
-      </button>
+    <div class="flex">
+      <div class="w-2/3">
+        <div class="about-me py-14 px-16 text-xl w-3/3">
+          <p class="text-white x-animation-hidden">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
+            molestiae voluptate ab quaerat eaque odit consectetur dolorum
+            eligendi provident culpa optio dolore itaque, placeat soluta nobis
+            sequi fugiat in earum!
+          </p>
+        </div>
+        <div class="cv-download py-5 px-16">
+          <button
+            class="bg-cyan-500 rounded-full text-white px-11 py-5 font-semibold text-md y-animation-hidden"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+      <div class="w-1/3 mr-10">      <img src="public/images/Code typing-bro.png" alt=""></div>
     </div>
   </div>
 </template>
