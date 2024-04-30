@@ -61,9 +61,7 @@ onMounted(() => {
   XhiddenElements.forEach((el) => Xobserver.observe(el));
 });
 
-const toContact = () => {
-  router.push("https://www.google.com")
-};
+
 </script>
 
 <style scoped>

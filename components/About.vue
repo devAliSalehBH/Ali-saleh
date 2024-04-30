@@ -12,24 +12,32 @@
     </p>
 
     <div class="lg:flex">
-      <div class=" w-full lg:w-2/3">
+      <div class="w-full lg:w-2/3">
         <div class="about-me py-14 px-16 text-xl w-3/3">
           <p class="text-white x-animation-hidden">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
-            molestiae voluptate ab quaerat eaque odit consectetur dolorum
-            eligendi provident culpa optio dolore itaque, placeat soluta nobis
-            sequi fugiat in earum!
+            My name is Ali, a recent graduate IT student, I am interested in
+            designing and developing Software. I enjoy challenges and solving
+            problems. I’m a diligent self-learner and motivated to learn
+            everything new. I am looking forward to developing myself and the
+            place I am in. I am keen to achieve all my ambitions and goals.
           </p>
         </div>
         <div class="cv-download py-5 px-16">
           <button
+            @click="
+              navigateToExternal(
+                'https://drive.google.com/file/d/1O2WfMjWKsnK21bp46aiWbICb2klkIPLm/view?usp=sharing'
+              )
+            "
             class="bg-cyan-500 rounded-full text-white px-11 py-5 font-semibold text-md y-animation-hidden"
           >
             Download CV
           </button>
         </div>
       </div>
-      <div class="lg:w-1/3 m-10">      <img src="public/images/Code typing-bro.png" alt=""></div>
+      <div class="lg:w-1/3 m-10">
+        <img src="public/images/Code typing-bro.png" alt="" />
+      </div>
     </div>
   </div>
 </template>
@@ -62,6 +70,10 @@ onMounted(() => {
   const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
   XhiddenElements.forEach((el) => Xobserver.observe(el));
 });
+
+const navigateToExternal = (link) => {
+  window.open(link, "_blank");
+};
 </script>
 
 <style scoped>
