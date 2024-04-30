@@ -16,7 +16,8 @@
       class="medias m-10 lg:m-20 p-10 bg-slate-800 rounded-xl grid grid-cols-1 lg:grid-cols-2"
     >
       <div
-        class="media flex gap-3 p-4 items-center text-[3vw] lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        @click="navigateToExternal('https://wa.me/967779819388')"
+        class="media cursor-pointer w-fit flex gap-3 p-4 items-center text-[3vw] lg:text-3xl text-gray-400 hover:text-white x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -26,7 +27,8 @@
         <p>+967779819388</p>
       </div>
       <div
-        class="media flex gap-3 p-4 items-center text-[3vw] lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        @click="navigateToExternal('https://mailto:off.alisaleh@gmail.com')"
+        class="media flex cursor-pointer gap-3 p-4 items-center text-[3vw] lg:text-3xl w-fit text-gray-400 hover:text-white x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -36,7 +38,8 @@
         <p>off.alisaleh@gmail.com</p>
       </div>
       <div
-        class="media flex gap-3 p-4 items-center text-[3vw] lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        @click="navigateToExternal('https://github.com/devAliSalehBH')"
+        class="media flex cursor-pointer gap-3 p-4 items-center text-[3vw] lg:text-3xl w-fit text-gray-400 hover:text-white x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -46,7 +49,10 @@
         <p>devAliSalehBH</p>
       </div>
       <div
-        class="media flex gap-3 p-4 items-center text-[3vw] lg:text-3xl w-full text-gray-400 x-animation-hidden"
+        @click="
+          navigateToExternal('https://www.linkedin.com/in/ali-saleh-5493932a3/')
+        "
+        class="media flex cursor-pointer gap-3 p-4 items-center text-[3vw] lg:text-3xl w-fit text-gray-400 hover:text-white x-animation-hidden"
       >
         <div
           class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
@@ -88,6 +94,9 @@ onMounted(() => {
   const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
   XhiddenElements.forEach((el) => Xobserver.observe(el));
 });
+const navigateToExternal = (link) => {
+  window.open(link, "_blank");
+};
 </script>
 
 <style scoped>
@@ -120,6 +129,7 @@ onMounted(() => {
 }
 .media:nth-child(1) {
   transition-duration: 300ms;
+  
 }
 .media:nth-child(2) {
   transition-duration: 600ms;

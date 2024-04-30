@@ -88,8 +88,8 @@ const lang = [
 const frameworks = [
   { name: "flutter", path: "/images/f-img1.png" },
   { name: "Vue.js", path: "/images/f-img2.png" },
-  { name: "Laravel", path: "/images/f-img3.png" },
-  { name: "ASP.NET", path: "/images/d-img2.png" },
+
+  { name: "ASP.NET", path: "/images/f-img4.png" },
 ];
 const db = [
   { name: "SQL", path: "/images/d-img1.png" },

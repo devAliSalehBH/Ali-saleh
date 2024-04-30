@@ -1,11 +1,8 @@
 <template>
-  <div
-    id="home"
-    class="home text-white pb-10 pt-36 gap-3 px-10 lg:flex"
-  >
+  <div id="home" class="home text-white pb-10 pt-36 gap-3 px-10 lg:flex">
     <div class="pic lg:w-1/2">
       <div class="box">
-        <img src="/images/Programming-amico.png" alt="">
+        <img src="/images/Programming-amico.png" alt="" />
       </div>
     </div>
     <div class="welcome pt-14 text-center lg:text-start">
@@ -19,6 +16,7 @@
         Fullstack Developer
       </p>
       <button
+        @click="$router.push('#contact')"
         class="bg-cyan-500 py-3 px-7 rounded-3xl font-bold y-animation-hidden"
       >
         Contact me
@@ -62,6 +60,10 @@ onMounted(() => {
   const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
   XhiddenElements.forEach((el) => Xobserver.observe(el));
 });
+
+const toContact = () => {
+  router.push("https://www.google.com")
+};
 </script>
 
 <style scoped>

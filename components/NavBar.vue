@@ -61,7 +61,7 @@ const naviation = [
   },
   {
     name: "Projects",
-    path: "#projects",
+    path: "https://www.google.com",
   },
   { name: "Contact", path: "#contact" },
 ];
