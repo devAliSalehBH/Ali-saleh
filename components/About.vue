@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="lg:w-1/3 m-10">
-        <img src="public/images/Code typing-bro.png" alt="" />
+        <SvgTow />
       </div>
     </div>
   </div>

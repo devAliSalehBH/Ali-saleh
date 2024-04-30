@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="animated"
+    class="animation-hidden"
     id="freepik_stories-programming"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 500 500"
@@ -2866,6 +2866,25 @@
     </defs>
   </svg>
 </template>
+
+<script setup>
+import { onMounted } from "vue";
+onMounted(() => {
+  const Yobserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animated");
+      } else {
+        entry.target.classList.remove("animated");
+      }
+    });
+  });
+
+  const YhiddenElements = document.querySelectorAll(".animation-hidden");
+  YhiddenElements.forEach((el) => Yobserver.observe(el));
+});
+</script>
 <style>
 svg#freepik_stories-programming:not(.animated) .animable {
   opacity: 0;
