@@ -1,4 +1,5 @@
 <template>
+
   <div id="skills" class="my-skill bg-slate-800 py-10 px-16">
     <h2
       class="text-white justify-center flex text-4xl pt-10 font-semibold y-animation-hidden"
