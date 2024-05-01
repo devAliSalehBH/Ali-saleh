@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scrollbar-thin scrollbar-track-slate-900 scrollbar-thumb-cyan-500;
+}
