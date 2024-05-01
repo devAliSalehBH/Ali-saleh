@@ -26,7 +26,7 @@
           <button
             @click="
               navigateToExternal(
-                'https://drive.google.com/file/d/1O2WfMjWKsnK21bp46aiWbICb2klkIPLm/view?usp=sharing'
+                'https://drive.google.com/file/d/11tHHpI5Ror8GrE7WEegB6oFZAbw5O_6p/view?usp=sharing'
               )
             "
             class="bg-cyan-500 rounded-full text-white px-11 py-5 font-semibold text-md y-animation-hidden"
