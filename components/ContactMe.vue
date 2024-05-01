@@ -15,51 +15,18 @@
     <div
       class="medias m-10 lg:m-20 p-10 bg-slate-800 rounded-xl grid grid-cols-1 lg:grid-cols-2"
     >
-      <div
-        @click="navigateToExternal('https://wa.me/967779819388')"
-        class="media cursor-pointer w-fit flex gap-3 p-4 items-center text-[3vw] lg:text-3xl text-gray-400 hover:text-white x-animation-hidden"
-      >
+      <div v-for="i in contact" :key="i.link">
         <div
-          class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
+          @click="navigateToExternal(i.link)"
+          class="media cursor-pointer w-fit flex gap-3 p-4 items-center text-[3vw] lg:text-3xl text-gray-400 hover:text-cyan-500 x-animation-hidden"
         >
-          <Icon name="uil:whatsapp" color="white" />
+          <div
+            class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
+          >
+            <Icon :name="i.icon" color="white" />
+          </div>
+          <p class=" ">{{ i.name }}</p>
         </div>
-        <p>+967779819388</p>
-      </div>
-      <div
-        @click="navigateToExternal('https://mailto:off.alisaleh@gmail.com')"
-        class="media flex cursor-pointer gap-3 p-4 items-center text-[3vw] lg:text-3xl w-fit text-gray-400 hover:text-white x-animation-hidden"
-      >
-        <div
-          class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
-        >
-          <Icon name="uil:envelope-alt" color="white" />
-        </div>
-        <p>off.alisaleh@gmail.com</p>
-      </div>
-      <div
-        @click="navigateToExternal('https://github.com/devAliSalehBH')"
-        class="media flex cursor-pointer gap-3 p-4 items-center text-[3vw] lg:text-3xl w-fit text-gray-400 hover:text-white x-animation-hidden"
-      >
-        <div
-          class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
-        >
-          <Icon name="uil:github" color="white" />
-        </div>
-        <p>devAliSalehBH</p>
-      </div>
-      <div
-        @click="
-          navigateToExternal('https://www.linkedin.com/in/ali-saleh-5493932a3/')
-        "
-        class="media flex cursor-pointer gap-3 p-4 items-center text-[3vw] lg:text-3xl w-fit text-gray-400 hover:text-white x-animation-hidden"
-      >
-        <div
-          class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
-        >
-          <Icon name="uil:linkedin" color="white" />
-        </div>
-        <p>Ali Saleh</p>
       </div>
     </div>
   </div>
@@ -67,6 +34,29 @@
 
 <script setup>
 import { onMounted } from "vue";
+
+const contact = [
+  {
+    name: "+967779819388",
+    link: "https://wa.me/967779819388",
+    icon: "uil:whatsapp",
+  },
+  {
+    name: "off.alisaleh@gmail.com",
+    link: "https://mailto:off.alisaleh@gmail.com",
+    icon: "uil:envelope-alt",
+  },
+  {
+    name: "devAliSalehBH",
+    link: "https://github.com/devAliSalehBH",
+    icon: "uil:github",
+  },
+  {
+    name: "Ali Saleh",
+    link: "https://www.linkedin.com/in/ali-saleh-5493932a3/",
+    icon: "uil:linkedin",
+  },
+];
 
 onMounted(() => {
   const Yobserver = new IntersectionObserver((entries) => {
@@ -129,7 +119,6 @@ const navigateToExternal = (link) => {
 }
 .media:nth-child(1) {
   transition-duration: 300ms;
-  
 }
 .media:nth-child(2) {
   transition-duration: 600ms;
