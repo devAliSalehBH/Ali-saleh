@@ -21,7 +21,7 @@
           class="media cursor-pointer w-fit flex gap-3 p-4 items-center text-[3vw] lg:text-3xl text-gray-400 hover:text-cyan-500 x-animation-hidden"
         >
           <div
-            class="icon flex rounded-full bg-cyan-500 p-3 justify-center items-center"
+            class="icon flex rounded-full bg-slate-900 border-2 border-cyan-500 p-3 justify-center items-center"
           >
             <Icon :name="i.icon" color="white" />
           </div>
