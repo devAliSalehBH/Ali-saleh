@@ -1,0 +1,1 @@
+import{_ as t,c as s,Y as o,o as a}from"./_YAeP7Io.js";const c={},l={class:"layout bg-slate-900 h-full"};function r(e,n){return a(),s("div",l,[o(e.$slots,"default")])}const f=t(c,[["render",r]]);export{f as default};
