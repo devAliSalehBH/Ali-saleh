@@ -10,7 +10,10 @@
       class="navigation hidden lg:flex gap-14 items-center text-2xl bg-white text-black py-4 px-20 rounded-bl-full font-bold"
     >
       <div v-for="item in naviation" :key="item.path">
-        <NuxtLink :to="item.path" class="hover:text-cyan-500 hover:text-3xl duration-75">
+        <NuxtLink
+          :to="item.path"
+          class="hover:text-cyan-500 hover:text-3xl duration-75"
+        >
           {{ item.name }}</NuxtLink
         >
       </div>
@@ -61,7 +64,7 @@ const naviation = [
   },
   {
     name: "Projects",
-    path: "https://www.google.com",
+    path: "#project",
   },
   { name: "Contact", path: "#contact" },
 ];
@@ -102,6 +105,6 @@ const navScroll = () => {
   color: black;
 }
 .trans .navigation {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 </style>

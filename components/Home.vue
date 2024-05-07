@@ -2,7 +2,7 @@
   <div id="home" class="home text-white pb-10 pt-36 gap-3 px-10 lg:flex">
     <div class="pic lg:w-1/2">
       <div class="box">
-        <svgOne/>
+        <svgOne />
       </div>
     </div>
     <div class="welcome pt-14 text-center lg:text-start">
@@ -60,8 +60,6 @@ onMounted(() => {
   const XhiddenElements = document.querySelectorAll(".x-animation-hidden");
   XhiddenElements.forEach((el) => Xobserver.observe(el));
 });
-
-
 </script>
 
 <style scoped>
